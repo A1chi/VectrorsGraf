@@ -20,7 +20,7 @@ namespace VectorsGraf
             Thread listening = new Thread(new ThreadStart(controller.Listen));
             List<IRayTrasable> objects = new List<IRayTrasable>
             {
-                 // new Cube (new Vec3(0, 8, 0), new Vec3(8, 16, 8)),
+                new Cube (new Vec3(5, 5, 1), new Vec3(15, 15, 10)),
                 new Sphere(new Vec3(0, 0, 5), 3),
                 new Plane(new Vec3(0, -1, -1), new Vec3(0, 0, 10))
             };
@@ -321,5 +321,13 @@ namespace VectorsGraf
         {
             return Normal;
         }
+    }
+
+    public interface IObserver
+    {
+    }
+
+    public interface ISubject
+    {
     }
 }

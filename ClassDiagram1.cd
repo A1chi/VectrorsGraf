@@ -1,27 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
-  <Class Name="Test3.Program">
+  <Class Name="VectorsGraf.Program">
     <Position X="7.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAQBAAAAAAAAAAAABAAAQAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Test3.Vec3">
+  <Class Name="VectorsGraf.Vec3">
     <Position X="0.5" Y="0.5" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAcAEAAABACAAAAAAAAAAAAAAAYAE=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Test3.Ray">
+  <Class Name="VectorsGraf.Ray">
     <Position X="3.25" Y="0.5" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAgAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Test3.Sphere" BaseTypeListCollapsed="true">
+  <Class Name="VectorsGraf.Sphere" BaseTypeListCollapsed="true">
     <Position X="9.75" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAIWAAAAAAAAAAAAAAEAAAAAAIAAAAAAAAAAAAIAAA=</HashCode>
@@ -29,7 +29,7 @@
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="Test3.Plane" BaseTypeListCollapsed="true">
+  <Class Name="VectorsGraf.Plane" BaseTypeListCollapsed="true">
     <Position X="8" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAgAAAAAAEAAAAAAIIAAAAAAAAAAAAAAA=</HashCode>
@@ -37,13 +37,13 @@
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="Test3.KeyControl">
+  <Class Name="VectorsGraf.KeyControl">
     <Position X="6" Y="0.5" Width="1.5" />
     <Compartments>
       <Compartment Name="Nested Types" Collapsed="false" />
     </Compartments>
     <NestedTypes>
-      <Delegate Name="Test3.KeyControl.Handler" Collapsed="true">
+      <Delegate Name="VectorsGraf.KeyControl.Handler" Collapsed="true">
         <TypeIdentifier>
           <NewMemberFileName>KeyControl.cs</NewMemberFileName>
         </TypeIdentifier>
@@ -54,7 +54,7 @@
       <FileName>KeyControl.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Test3.Camera">
+  <Class Name="VectorsGraf.Camera">
     <Position X="1" Y="5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAQAAAgAAAAAAAAAAAAAAAAAAAAAAAAEHEAAAAAAAAA=</HashCode>
@@ -62,7 +62,7 @@
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Class Name="Test3.Cube">
+  <Class Name="VectorsGraf.Cube">
     <Position X="6.25" Y="5.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAABAAAAAAEAAEAAAAAAIAAAAEAAAAAAAAAAA=</HashCode>
@@ -70,18 +70,32 @@
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Interface Name="Test3.IRayTrasable">
+  <Interface Name="VectorsGraf.IRayTrasable">
     <Position X="3.25" Y="2.5" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAEAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Interface Name="Test3.IControlable">
+  <Interface Name="VectorsGraf.IControlable">
     <Position X="3.25" Y="4" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
       <FileName>IControlable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="VectorsGraf.IObserver">
+    <Position X="8" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="VectorsGraf.ISubject">
+    <Position X="8" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Font Name="Segoe UI" Size="9" />
