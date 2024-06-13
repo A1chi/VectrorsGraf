@@ -17,7 +17,10 @@ namespace VectorsGraf
             KeyControl controller = new KeyControl();
             controller.usedKey += camera.KeyControl;
             ConsoleKey key = new ConsoleKey();
-            Thread listening = new Thread(new ThreadStart(controller.Listen));
+            Thread listening = new Thread(new ThreadStart(controller.Listen)); // Now that only for camera
+            //TODO
+            //Create a class or struct for control all object (Cube , Sphere , Plane)
+            // MAYBE use Observer patern for that
             List<IRayTrasable> objects = new List<IRayTrasable>
             {
                 new Cube (new Vec3(5, 5, 1), new Vec3(15, 15, 10)),
@@ -31,7 +34,7 @@ namespace VectorsGraf
                 Array.Fill(screen, ' ');
                 angle -= 0.005;
                 Matrix4x4 rotationMatrix = camera.rotationMatrix;
-                //camera.Update();
+                //camera.Update();    NOW DON'T NEED , Maybe use that next time
 
                 for (int y = 0; y < screenHeight; y++)
                 {
@@ -102,7 +105,7 @@ namespace VectorsGraf
         }
     }
 
-    interface IRayTrasable
+    interface IRayTrasable //For merrors and Ray Trase efect
     {
         float Intersect(Ray ray);
         Vec3 GetNormal(Vec3 hitPoint);
@@ -192,7 +195,7 @@ namespace VectorsGraf
             return normal;
         }
 
-        public void KeyControl(ConsoleKey key)
+        public void KeyControl(ConsoleKey key) // TEST METOD (for upgrade)
         {
             throw new NotImplementedException();
         }
@@ -323,7 +326,7 @@ namespace VectorsGraf
         }
     }
 
-    public interface IObserver
+    public interface IObserver //Metods for Observer patterns
     {
     }
 
